@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Aisha Smith | Web Design Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="home">
+      <a href="#home" class="logo">Aisha Smith</a>
+      <!-- Menu -->
+      <nav>
+        <a href="#" class="hide-desktop">
+          <img
+            src="images/hamburger.svg"
+            alt="toggle menu"
+            class="menu"
+            id="menu"
+          />
+        </a>
+
+        <ul class="show-desktop hide-mobile" id="nav">
+          <li id="exit" class="exit-btn hide-desktop">
+            <img src="images/exit.svg" alt="exit menu" />
+          </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Menu end -->
+    </header>
+    <!-- Header end -->
+
+    <!-- Body container -->
+    <div class="container">
+      <!-- Hero -->
+      <div class="hero">
+        <h1>
+          Web design and development.
+        </h1>
+        <h2>
+          Get started
+          <a href="#about">here.</a>
+        </h2>
+
+        <a href="#about" class="scroll-container"
+          ><img class="scroll" src="images/scroll.svg" alt="Scroll icon"
+        /></a>
+      </div>
+      <!-- Hero end -->
+
+      <!-- About section -->
+      <div class="about">
+        <h2 id="about">About Me</h2>
+        <div class="about-container" data-aos="fade-up" data-aos-duration="750">
+          <img
+            class="lazyload"
+            data-src="images/avatar.jpg"
+            alt="Profile Picture"
+          />
+          <div class="card">
+            <div class="text">
+              <h3>Hi! I'm Aisha</h3>
+              <p>
+                I’m a freelance web designer and frontend developer. I build
+                responsive websites from scratch using HTML, CSS and JavaScript.
+                I also do website redesigns and optimise already existing sites
+                for mobile. I have a background in graphic design so I really
+                enjoy bringing the aesthetic of a brand to life on the web.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About section end -->
+
+      <!-- Portfolio section -->
+      <div class="portfolio">
+        <h2 id="portfolio">My Portfolio</h2>
+        <div
+          class="portfolio-item lekker-vegan"
+          data-aos="fade-up"
+          data-aos-duration="750"
+        >
+          <img
+            class="portfolio-img lazyload"
+            data-src="images/lekker-vegan.jpg"
+            alt="Lekker Vegan"
+          />
+          <div class="card portfolio-card">
+            <div class="text">
+              <h3>Lekker Vegan</h3>
+              <h4>Mock Website Redesign</h4>
+              <p>
+                The following is an example of a mock redesign of the website of
+                the gourmet vegan fast food restaurant in Cape Town, Lekker
+                Vegan. I focused on preserving the look and feel of the site,
+                while improving the user interface and experience.
+              </p>
+              <a
+                href="https://aishamalenka.github.io/lekker-vegan-mock-redesign/"
+                target="blank"
+                class="button"
+                >Visit the site</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="portfolio-item shallow"
+          data-aos="fade-up"
+          data-aos-duration="750"
+        >
+          <img
+            class="portfolio-img lazyload"
+            data-src="images/shallow.jpg"
+            alt="Shallow"
+          />
+          <div class="card portfolio-card">
+            <div class="text">
+              <h3>Shallow</h3>
+              <h4>Band Website</h4>
+              <p>
+                Shallow is a fictional all-female band with a neon aesthetic.
+                This is an example of the official website I might design for a
+                band like theirs. I chose to build this site because I enjoy
+                supporting creatives, be that musicians, artists, writers or any
+                other kind.
+              </p>
+              <a
+                href="https://aishamalenka.github.io/shallow-band/"
+                target="blank"
+                class="button"
+                >Visit the site</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="portfolio-item united-lloyd"
+          data-aos="fade-up"
+          data-aos-duration="750"
+        >
+          <img
+            class="portfolio-img lazyload"
+            data-src="images/united-lloyd.jpg"
+            alt="United Lloyd"
+          />
+          <div class="card portfolio-card">
+            <div class="text">
+              <h3>United Lloyd</h3>
+              <h4>Crewing Website</h4>
+              <p>
+                I had the opportunity to do an internship at an international
+                shipping company in Germany in 2018 and I was given the task of
+                creating a website for a new crewing project the company was
+                starting. The site is now live and in use.
+              </p>
+              <a href="https://united-lloyd.com/" target="blank" class="button"
+                >Visit the site</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio section end -->
+
+      <!-- Contact section -->
+      <div class="contact">
+        <h2 id="contact">Contact Me</h2>
+        <div class="card" data-aos="fade-up" data-aos-duration="750">
+          <div class="form-container">
+            <form action="mailto:aishamalenka@gmail.com" method="GET">
+              <div class="inputs">
+                <input placeholder="Name" type="text" id="name" name="name" />
+                <input placeholder="Email" type="text" id="email" name="name" />
+              </div>
+              <textarea
+                placeholder="Message"
+                name="message"
+                id="message"
+              ></textarea>
+              <div>
+                <input type="submit" value="Send Message" class="button" />
+              </div>
+            </form>
+          </div>
+
+          <img src="images/plane.svg" alt="Paper Plane Graphic" />
+        </div>
+      </div>
+      <!-- Contact section end -->
+      <!-- Footer section -->
+      <footer>
+        <a href="#home"><img src="images/arrows.svg" alt="Double Arrow"/></a>
+        <p>Aisha Smith &copy;2019</p>
+      </footer>
+      <!-- Footer section end -->
+    </div>
+    <!-- Body container end -->
+
+    <script>
+      var menu = document.getElementById("menu");
+      var nav = document.getElementById("nav");
+      var exit = document.getElementById("exit");
+
+      menu.addEventListener("click", function(e) {
+        nav.classList.toggle("hide-mobile");
+        e.preventDefault();
+      });
+
+      exit.addEventListener("click", function(e) {
+        nav.classList.add("hide-mobile");
+        e.preventDefault();
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/ls.bgset.min.js"></script>
+    <script src="./js/lazysizes.min.js"></script>
+  </body>
+</html>

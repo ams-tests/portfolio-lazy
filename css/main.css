@@ -1,0 +1,906 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+/* Header */
+
+.logo {
+  margin-top: 7vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 6vw;
+  letter-spacing: 1.5px;
+}
+
+.logo a {
+  padding: 0;
+  margin: 0;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+/* Menu */
+
+.menu {
+  width: 7vw;
+  margin-top: 7.75vw;
+}
+
+nav ul {
+  position: fixed;
+  width: 60%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background: #000000;
+  height: 100%;
+  z-index: 7;
+  padding-top: 3em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1em 2em;
+  background-color: #000000;
+}
+
+nav ul li a:hover {
+  background-color: #6b6b6b;
+}
+
+.exit-btn {
+  margin-bottom: 1em;
+  margin-top: -1.3em;
+  text-align: right;
+  padding: 0 1.4em;
+}
+
+.exit-btn img {
+  width: 6vw;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* Menu end */
+/* Header end */
+
+/* Hero */
+
+h2 a {
+  color: #6b6b6b;
+}
+
+.scroll-container {
+  width: 8vw;
+  height: 21.27vw;
+}
+
+.scroll {
+  width: 8vw;
+  margin-bottom: 4vw;
+  animation: move 1s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(7.5px);
+  }
+}
+
+.hero h1 {
+  font-weight: 300;
+  font-size: 9vw;
+  line-height: 14vw;
+  letter-spacing: 0.8px;
+  text-align: left;
+  width: 80%;
+  margin: 10vw auto 0;
+}
+
+.hero h2 {
+  font-weight: 300;
+  font-size: 9vw;
+  line-height: 12vw;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: 0.8px;
+  margin: 6vw auto 11vw;
+  width: 80%;
+  padding: 0;
+}
+/* Hero end */
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+  font-size: 1.65em;
+  padding-top: 7vw;
+  padding-bottom: 7vw;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+.card {
+  color: #000000;
+  text-align: left;
+}
+
+.card h3 {
+  font-weight: 700;
+}
+
+.card h4 {
+  font-weight: 300;
+}
+
+.button {
+  color: #000000;
+  border: 0.15em solid #000000;
+}
+
+.button:hover {
+  color: #ffffff;
+  border: none;
+  background: #000000;
+  border: 0.15em solid #000000;
+  text-decoration: none;
+}
+
+/* About section */
+
+.about-container img {
+  width: 80%;
+  border-radius: 4vw;
+}
+
+.about-container .card {
+  background: none;
+  width: 80%;
+  margin: auto;
+}
+
+.about-container h3 {
+  font-weight: 100;
+  font-size: 2em;
+  margin: 4vw auto 2vw;
+  letter-spacing: 0.3px;
+}
+
+.about-container p {
+  font-size: 0.95em;
+  margin: 0 auto 15vw;
+  line-height: 1.35em;
+  letter-spacing: 0.3px;
+}
+/* About section end */
+
+/* Portfolio section */
+
+.portfolio-item {
+  margin-bottom: 12vw;
+}
+
+.united-lloyd {
+  margin-bottom: 15vw;
+}
+
+.portfolio .card {
+  margin-top: -5px;
+}
+
+.portfolio img {
+  width: 100%;
+}
+
+.portfolio .text {
+  width: 80%;
+  margin: auto;
+  padding: 7vw 0;
+}
+
+.portfolio .text h3 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0 0 0.5vw;
+  text-transform: uppercase;
+}
+
+.portfolio .text h4 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0 0 2vw;
+}
+
+.portfolio .text p {
+  font-size: 0.9em;
+  margin: 0;
+  line-height: 1.35em;
+  letter-spacing: 0.3px;
+  padding-bottom: 5vw;
+}
+
+.portfolio .button {
+  padding: 2vw;
+  width: 35%;
+}
+
+.portfolio a {
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.united-lloyd {
+  margin-bottom: 15vw;
+}
+
+.united-lloyd .text {
+  padding-bottom: 0;
+}
+
+.united-lloyd img {
+  border: 1px solid #21739b;
+}
+/* Portfolio section end */
+
+/* Contact section */
+
+.contact .card {
+  text-align: center;
+  border-radius: 4vw;
+  width: 80%;
+  margin: 0 auto 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8vw 0 4vw;
+  background-color: #000000;
+}
+
+.form-container {
+  width: 80%;
+  margin: auto;
+}
+
+form {
+  text-align: left;
+}
+
+.contact .card img {
+  width: 20vw;
+  justify-items: right;
+  align-self: center;
+  margin-left: 65%;
+}
+
+.form-container .inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+form input {
+  width: 46%;
+  border: none;
+  border-bottom: 0.15em solid #ffffff;
+  background-color: #000000;
+  padding: 0.75vw 0;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+form input::placeholder {
+  color: #ffffff;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+form input::-moz-placeholder {
+  color: #ffffff;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+form input:-ms-input-placeholder {
+  color: #ffffff;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+form input:-moz-placeholder {
+  color: #ffffff;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 0.15em solid #ffffff;
+  background-color: #000000;
+  resize: none;
+  height: 25vw;
+  padding: 0.75vw 0;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  color: #ffffff;
+  margin-top: 5vw;
+  font-size: 0.9em;
+  overflow-y: scroll;
+}
+
+form textarea::placeholder {
+  color: #ffffff;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+form textarea::-moz-placeholder {
+  color: #ffffff;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+form textarea:-ms-input-placeholder {
+  color: #ffffff;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+form textarea:-moz-placeholder {
+  color: #ffffff;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+form .button {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  text-align: left;
+  margin-top: 3vw;
+  padding: 1vw 3vw;
+  text-align: center;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+form .button:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 0.15em solid #ffffff;
+}
+
+form input[type="submit"] {
+  width: 42.5vw;
+}
+
+form input[type="text"]:focus::-webkit-input-placeholder,
+form textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+form {
+  user-select: none;
+}
+
+input:focus,
+textarea {
+  outline: none !important;
+}
+
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+/* Contact section end */
+
+/* Footer */
+
+footer {
+  margin-top: 8vw;
+}
+
+footer a img {
+  width: 6.5vw;
+  margin-bottom: 2.5vw;
+}
+
+footer p {
+  font-size: 0.7em;
+  margin: 0;
+  margin-bottom: 2vw;
+}
+/* Footer end */
+
+@media only screen and (min-width: 768px) {
+  /* Menu */
+  nav ul {
+    width: 40%;
+  }
+
+  .exit-btn {
+    margin-top: 0.9vw;
+    margin-right: 2vw;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+  }
+  /* Menu end */
+
+  /* Hero */
+  h2 {
+    font-size: 3em;
+  }
+
+  .hero h1 {
+    font-size: 7.75vw;
+    letter-spacing: 1.2px;
+  }
+
+  .hero h2 {
+    font-size: 7.75vw;
+    letter-spacing: 1.2px;
+    margin: 6vw auto 11vw;
+  }
+
+  .scroll {
+    animation: move 1s infinite alternate;
+  }
+
+  @keyframes move {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(15px);
+    }
+  }
+
+  /* Hero end */
+
+  /* About section */
+  #about {
+    margin: 0;
+    padding: 8vw auto 7vw;
+  }
+
+  .about-container h3 {
+    font-size: 2em;
+  }
+
+  .about-container p {
+    font-size: 1em;
+    margin: 0 auto 7vw;
+  }
+  /* About section end */
+
+  /* Porfolio section */
+
+  .portfolio .text h3 {
+    font-size: 2.75em;
+  }
+
+  .portfolio .text h4 {
+    font-size: 1.75em;
+    padding: 0 0 3vw;
+  }
+
+  .portfolio .text p {
+    font-size: 1em;
+    padding-bottom: 4vw;
+  }
+
+  .portfolio .button {
+    width: 20vw;
+    padding: 1vw 3vw;
+  }
+
+  .portfolio a {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .united-lloyd {
+    margin-bottom: 7vw;
+  }
+  /* Porfolio section end */
+
+  /* Contact section */
+
+  form input {
+    font-size: 1em;
+  }
+
+  form textarea {
+    font-size: 1em;
+  }
+
+  form input[type="submit"] {
+    width: 46%;
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
+  /* Contact section end */
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 70%;
+    margin: auto;
+  }
+
+  /* Menu */
+
+  .show-desktop {
+    display: block;
+    margin: 0 auto 13% auto;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  .logo {
+    margin-top: 3vw;
+    font-size: 2.5vw;
+    letter-spacing: 1.5px;
+  }
+
+  nav {
+    margin-top: 3vw;
+  }
+
+  nav ul {
+    position: inherit;
+    width: auto;
+    background: none;
+    height: auto;
+    display: flex;
+    padding-top: 0;
+  }
+
+  nav ul li {
+    float: left;
+    margin-left: 2em;
+    padding: 0.25em 0;
+  }
+
+  nav ul li a {
+    color: black;
+    background-color: inherit;
+    text-align: right;
+    font-size: 1em;
+    padding: 0;
+  }
+
+  nav ul li a:hover {
+    background-color: inherit;
+    color: #6b6b6b;
+  }
+
+  nav ul li:nth-child(5) {
+    border: 1.5px solid #000000;
+    padding: 0.25em 1em;
+  }
+
+  nav ul li:nth-child(5):hover {
+    border: 1.5px solid #6b6b6b;
+  }
+  /* Menu end */
+
+  /* Hero */
+
+  .hero h1 {
+    font-size: 2.5vw;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: 11vw;
+    padding: 0;
+    line-height: 4vw;
+  }
+
+  .hero h2 {
+    font-size: 2.5vw;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 4vw;
+  }
+
+  .scroll-container {
+    width: 4.25vw;
+    height: 10.05vw;
+  }
+
+  .scroll {
+    width: 4vw;
+    animation: move 1s infinite alternate;
+    margin: 7vw auto 4.5vw;
+  }
+
+  @keyframes move {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(20px);
+    }
+  }
+  /* Hero end */
+
+  h2 {
+    font-size: 2.5vw;
+    margin-bottom: 3.5vw;
+  }
+
+  /* About section */
+
+  #about {
+    margin: 0;
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+  }
+
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    background: #000000;
+  }
+
+  .about-container img {
+    width: 32.6%;
+    align-self: center;
+    border-radius: 0;
+  }
+
+  .about-container .card {
+    color: #ffffff;
+    width: 67.4%;
+    margin: none;
+  }
+
+  .about-container .card .text {
+    width: 80%;
+    margin: auto;
+  }
+
+  .about-container h3 {
+    font-weight: 100;
+    padding: 0;
+    margin: 0 auto 0.5em;
+    letter-spacing: 1.25px;
+    font-size: 1.8em;
+  }
+
+  .about-container p {
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    line-height: 22.5px;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* About section end */
+
+  .button {
+    color: #ffffff;
+    border: 0.15em solid #ffffff;
+  }
+
+  .button:hover {
+    color: #000000;
+    background: #ffffff;
+    border: 0.15em solid #ffffff;
+  }
+
+  /* Portfolio section */
+
+  #portfolio {
+    margin-bottom: 0;
+    padding-bottom: 3.5vw;
+  }
+
+  .portfolio .card {
+    background: #000000;
+  }
+
+  .portfolio img {
+    width: 100%;
+    margin-top: 0;
+    opacity: 1;
+  }
+
+  .portfolio .text {
+    color: #ffffff;
+  }
+
+  .portfolio-item {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 5vw;
+  }
+
+  .lekker-vegan {
+    margin-top: 0;
+  }
+
+  .portfolio .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s ease;
+    margin: 0;
+  }
+
+  .portfolio-item:hover .card {
+    opacity: 1;
+  }
+
+  .portfolio .text h3 {
+    font-size: 3em;
+    padding: 0;
+    padding-bottom: 0.25em;
+  }
+
+  .portfolio .text h4 {
+    font-size: 1.75em;
+    padding: 0;
+    padding-bottom: 1.5em;
+  }
+
+  .portfolio .text p {
+    font-size: 1em;
+    line-height: 22.5px;
+    letter-spacing: 0.75px;
+    padding: 0;
+    padding-bottom: 2em;
+  }
+
+  .portfolio .button {
+    width: 9.5vw;
+    padding: 0.5vw 2vw;
+  }
+
+  .portfolio a {
+    font-size: 1em;
+  }
+
+  .united-lloyd .text {
+    padding: 7vw 0;
+  }
+
+  .united-lloyd img {
+    box-sizing: border-box;
+  }
+  /* Portfolio section end */
+
+  /* Contact section */
+
+  #contact {
+    margin-bottom: 0;
+    padding-bottom: 3.5vw;
+  }
+
+  .contact .card {
+    text-align: left;
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 3vw 0;
+  }
+
+  .form-container {
+    width: 67.4%;
+    margin: 0;
+    justify-self: right;
+    display: flex;
+  }
+
+  form {
+    width: 80%;
+    margin: auto;
+  }
+
+  .contact .card img {
+    margin-left: 0;
+    margin-right: 3%;
+    width: 15vw;
+    align-self: center;
+    justify-items: left;
+  }
+
+  form input {
+    font-size: 1em;
+    padding: 0.25vw 0;
+    letter-spacing: 0.3px;
+  }
+
+  form textarea {
+    font-size: 1em;
+    padding: 0.25vw 0;
+    height: 7.5vw;
+    margin-top: 1vw;
+    letter-spacing: 0.3px;
+  }
+
+  form .button {
+    margin-top: 1.5vw;
+  }
+
+  form input[type="submit"] {
+    padding: 0.75vw 0;
+  }
+  /* Contact section end */
+
+  /* Footer */
+  footer a img {
+    width: 2.5vw;
+  }
+
+  footer p {
+    font-size: 0.9em;
+    letter-spacing: 0.3px;
+  }
+  /* Footer end */
+}
+
+@media only screen and (min-width: 1600px) {
+  .container {
+    width: 60%;
+  }
+
+  /* Hero */
+  .scroll {
+    width: 3vw;
+  }
+  /* Hero end */
+
+  /* Portfolio section */
+  .portfolio .button {
+    width: 7vw;
+  }
+  /* Portfolio section end */
+}
